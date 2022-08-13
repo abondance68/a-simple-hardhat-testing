@@ -1,0 +1,27 @@
+{
+  "name": "chainlink_papacharissiou",
+  "version": "1.0.0",
+  "description": "A simple APP",
+  "main": "index.js",
+  "author": "Laurent Knauss",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "hardhat test test/unit/MyFirstContract_unit_test.js --network goerli",
+    "test-integration": "hardhat test test/integration/MyFirstContract_integration_test.js --network goerli && hardhat test test/integration/VRFConsumer_integration_test.js --network goerli"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.1.0",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "chai": "^4.3.6",
+    "chai-bn": "^0.3.1",
+    "ethers": "^5.6.9",
+    "hardhat": "^2.10.1",
+    "hardhat-deploy": "^0.11.12",
+    "solidity-coverage": "^0.7.21"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.2",
+    "dotenv": "^16.0.1"
+  }
+}
